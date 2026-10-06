@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAME LAB</title>
+<style>
+    *{box-sizing:border-box}
+    body{
+        margin:0;
+        font-family:Arial,Helvetica,sans-serif;
+        background:linear-gradient(135deg,#eef7ff,#f7f2ff);
+        color:#172033;
+    }
+    header{
+        padding:42px 20px 28px;
+        text-align:center;
+        background:linear-gradient(135deg,#182848,#4b6cb7);
+        color:white;
+    }
+    header h1{
+        margin:0;
+        font-size:clamp(42px,7vw,72px);
+        letter-spacing:5px;
+    }
+    header p{
+        margin:10px 0 0;
+        font-size:18px;
+        opacity:.9;
+    }
+    .container{
+        max-width:1150px;
+        margin:0 auto;
+        padding:38px 20px 55px;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+        gap:25px;
+    }
+    .card{
+        background:white;
+        border-radius:24px;
+        padding:28px 22px 24px;
+        text-align:center;
+        box-shadow:0 12px 30px rgba(35,45,75,.12);
+        border:1px solid rgba(255,255,255,.8);
+        transition:.25s ease;
+    }
+    .card:hover{
+        transform:translateY(-8px);
+        box-shadow:0 18px 38px rgba(35,45,75,.20);
+    }
+    .name{
+        font-size:23px;
+        font-weight:800;
+        letter-spacing:1px;
+        margin-bottom:16px;
+    }
+    .logo{
+        width:112px;
+        height:112px;
+        margin:0 auto 18px;
+        border-radius:30px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:58px;
+        background:linear-gradient(145deg,#f1f5ff,#ffffff);
+        box-shadow:inset 0 0 0 3px #e7ebf8, 0 8px 18px rgba(40,50,90,.10);
+    }
+    .topic{
+        min-height:42px;
+        color:#657089;
+        font-size:15px;
+        margin-bottom:20px;
+    }
+    .btn{
+        display:inline-block;
+        width:100%;
+        padding:13px 18px;
+        border-radius:14px;
+        color:white;
+        text-decoration:none;
+        font-weight:800;
+        font-size:16px;
+        background:linear-gradient(135deg,#4b6cb7,#182848);
+        transition:.2s;
+    }
+    .btn:hover{filter:brightness(1.12);transform:scale(1.02)}
+    footer{
+        text-align:center;
+        padding:20px;
+        color:#697386;
+        font-size:14px;
+    }
+    @media(max-width:500px){
+        .container{padding:25px 14px 40px}
+        .grid{gap:17px}
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>GAME LAB</h1>
+    <p>Aprende, juega y demuestra tus conocimientos</p>
+</header>
+
+<main class="container">
+    <section class="grid">
+
+        <article class="card">
+            <div class="name">ASTERGAME</div>
+            <div class="logo" aria-label="Logo Astergame">🚀</div>
+            <div class="topic">Valores en acción</div>
+            <a class="btn" href="https://www.educaplay.com/learning-resources/30904697-valores_en_accion.html" target="_blank" rel="noopener">▶ JUGAR</a>
+        </article>
+
+        <article class="card">
+            <div class="name">FROGYGAME</div>
+            <div class="logo" aria-label="Logo Frogygame">🐸</div>
+            <div class="topic">Convivencia en el aula</div>
+            <a class="btn" href="https://www.educaplay.com/learning-resources/30904938-convivencia_en_el_aula.html" target="_blank" rel="noopener">▶ JUGAR</a>
+        </article>
+
+        <article class="card">
+            <div class="name">MEMORYGAME</div>
+            <div class="logo" aria-label="Logo Memorygame">🧠</div>
+            <div class="topic">Juego de valores</div>
+            <a class="btn" href="https://www.educaplay.com/learning-resources/30905133-juego_de_valores.html" target="_blank" rel="noopener">▶ JUGAR</a>
+        </article>
+
+        <article class="card">
+            <div class="name">CROSSWORD</div>
+            <div class="logo" aria-label="Logo Crossword">🧩</div>
+            <div class="topic">Respeto como centro</div>
+            <a class="btn" href="https://www.educaplay.com/learning-resources/30905457-crucigrama_de_valores_respeto_como_centro.html" target="_blank" rel="noopener">▶ JUGAR</a>
+        </article>
+
+        <article class="card">
+            <div class="name">WORD SEARCH PUZZLE</div>
+            <div class="logo" aria-label="Logo Word Search Puzzle">🔎</div>
+            <div class="topic">Normas de convivencia en el aula</div>
+            <a class="btn" href="https://www.educaplay.com/learning-resources/30905552-normas_de_convivencia_en_el_aula.html" target="_blank" rel="noopener">▶ JUGAR</a>
+        </article>
+
+        <article class="card">
+            <div class="name">QUIZZ</div>
+            <div class="logo" aria-label="Logo Quizz">❓</div>
+            <div class="topic">Actividad interactiva</div>
+            <a class="btn" href="#" onclick="alert('El enlace de QUIZZ no aparece en la plantilla de Word. Puedes agregarlo después.');return false;">▶ JUGAR</a>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    GAME LAB · Catálogo interactivo
+</footer>
+
+</body>
+</html>
